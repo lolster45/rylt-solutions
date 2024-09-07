@@ -1,35 +1,63 @@
+
+//React...
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {HashRouter, Routes, Route, Link} from "react-router-dom"
+
+//Components...
+import Home from './pages/Home'
+import ProductsList from './pages/ProductsList'
+import Contact from './pages/Contact'
+
+//React icons...
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+
+
+
+
+//Styles...
+import './App.scss'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="App">
+      <HashRouter>
+        
+          <div className='nav-bar'>
+            <h3>Royalty Solutions</h3>
+            <nav className='nav-wrap'>
+              <Link to={'/'}>Home</Link>
+              <Link to={'/products'}>Products</Link>
+              <Link to={'/contact'}>Contact</Link>
+            </nav>
+            
+            <div className='social-media-links'>
+              <FaFacebook/>
+              <FaInstagram/>
+              <FaTiktok/>
+            </div>
+          </div>
+
+
+
+
+
+          <Routes>
+              <Route path="/" element={<Home/>}/>
+              <Route path="/products" element={<ProductsList/>}/>
+              <Route path="/contact" element={<Contact/>}/>
+            
+
+
+          </Routes>
+      </HashRouter>
+    </div>
   )
 }
 
 export default App
+
+
+

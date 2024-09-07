@@ -1,0 +1,63 @@
+html {
+    overflow-y: scroll;
+}
+
+:root {
+    --royal-blue: #4169e1;
+}
+  
+
+.App {
+    height: 100vh;
+    background-color: var(--royal-blue);
+
+
+    .nav-bar {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        min-height: 40px;
+        width: 100%;
+        padding: 15px;
+
+        margin-bottom: 20px;
+        align-items: center;
+
+        color: #ff8e77;
+        //background-color: red;
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        .nav-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            width: 280px;
+            //background-color: brown;
+
+            a {
+                font-size: 1.3rem;
+                color: white;
+                text-decoration: none;
+            }
+        }
+        
+        
+        .social-media-links {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            width: 100px;
+            margin-left: 70px;
+            font-size: 1.3rem;
+            //background-color: aqua;
+            svg {
+                cursor: pointer;
+            }
+        }
+    }
+}

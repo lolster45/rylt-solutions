@@ -1,0 +1,60 @@
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    //background-color: red;
+
+    .form-wrap {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        //background-color: blue;
+        height: 450px;
+        width: 700px;
+
+        > div {
+            height: 15%;
+            width: 100%;
+            text-align: center;
+            //background-color: orange;
+            color: #eaa631;
+            h1 {
+                font-size: 2.2rem;
+            }
+            p {
+            }
+        }
+
+        form {
+            margin-top: 30px;
+            height: 85%;
+            //background-color: green;
+
+            >div {
+                display: flex;
+                height: 40px;
+                justify-content: space-between;
+                //background-color: black;
+                input {
+                    width: 45%;
+                }
+                div {
+                    
+                    width: 45%;
+                }
+            }
+
+            textarea {
+                margin-top: 40px;
+                height: 150px;
+                width: 100%;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+}
