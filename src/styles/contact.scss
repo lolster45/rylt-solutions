@@ -40,7 +40,15 @@
                 justify-content: space-between;
                 //background-color: black;
                 input {
+                    padding-left: 15px;
                     width: 45%;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    background-color: white;
+                    &::placeholder {
+                        color: white;
+                    }
                 }
                 div {
                     
