@@ -54,9 +54,11 @@ const Home = () => {
                 <div className='about-left'>
                     <h2>About Me</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque harum odit perferendis at placeat expedita et quos ipsa, voluptates eveniet autem beatae aliquid ut deserunt quibusdam aspernatur molestias? Et!</p>
+                    <br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque harum odit perferendis at placeat expedita et quos ipsa, voluptates eveniet autem beatae aliquid ut deserunt quibusdam aspernatur molestias? Et!</p>
                 </div>
                 <div className='about-right'>
-                    <img src="" alt="" />
+                    <img src="" alt="picture of you" />
                 </div>
             </section>
         </div>
