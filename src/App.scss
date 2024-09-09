@@ -5,11 +5,19 @@ html {
 :root {
     --royal-blue: #4169e1;
 }
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
   
 
 .App {
     height: 100vh;
     background-color: var(--royal-blue);
+
+    
 
 
     .nav-bar {
@@ -19,30 +27,45 @@ html {
         min-height: 80px;
         width: 100%;
         padding: 15px;
-
         margin-bottom: 20px;
         align-items: center;
-
+        padding: 0px 160px;
         color: black;
-        background-color: white;
-
+        background-color: #fa96e4;
         h3 {
             font-size: 1.8rem;
         }
-
         .nav-wrap {
             display: flex;
             align-items: center;
             justify-content: space-between;
             height: 100%;
-            width: 280px;
-            //background-color: brown;
+            width: 300px;
+            > span {
+                position: relative;
+                a {
+                    font-size: 1.2rem;
+                    color: black;
+                    text-decoration: none; 
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 3px;
+                    width: 0px;
+                    left: 0;
+                    bottom: -8px;
+                    background-color: white;
+                    transition: 0.2s;
+                }
 
-            a {
-                font-size: 1.3rem;
-                color: black;
-                text-decoration: none;
+                &:hover::after {
+                    width: 100%;
+                    background-color: white;
+                }
+              
             }
+
         }
         
         
@@ -59,5 +82,51 @@ html {
                 cursor: pointer;
             }
         }
+    }
+
+
+
+    footer {
+        height: 250px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: black;
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            width: 50%;
+
+            //background-color: red;
+
+            h2 {
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 0.9rem;
+                text-align: center;
+                margin-bottom: 25px;
+                color: gray;
+            }
+            .social-icons-footer{
+                display: flex;
+                justify-content: space-between;
+                width: 200px;
+                //background-color: green;
+                svg {
+                    cursor: pointer;
+                    font-size: 1.2rem;
+                    color: #FA96E4;
+                }
+            }
+
+        }
+
     }
 }
