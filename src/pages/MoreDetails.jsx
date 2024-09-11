@@ -1,8 +1,11 @@
 import React from 'react';
 
+//Styles...
+import "../styles/MoreDetails.scss"
+
 const MoreDetails = () => {
     return (
-        <div>
+        <div className='more-details-page'>
             This the the product itself showcasing what it comes with etc...
         </div>
     );
