@@ -5,7 +5,7 @@
     justify-content: center;
     height: 100%;
 
-    //background-color: red;
+    background-color: rgb(179, 227, 246);
 
     .form-wrap {
         position: relative;
@@ -21,7 +21,7 @@
             width: 100%;
             text-align: center;
             //background-color: orange;
-            color: #eaa631;
+            color: black;
             h1 {
                 font-size: 2.2rem;
             }
@@ -30,24 +30,26 @@
         }
 
         form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             margin-top: 30px;
             height: 85%;
-            //background-color: green;
-
             >div {
                 display: flex;
                 height: 40px;
+                width: 100%;
                 justify-content: space-between;
-                //background-color: black;
                 input {
                     padding-left: 15px;
                     width: 45%;
                     border: none;
                     outline: none;
-                    color: white;
+                    color: black;
                     background-color: white;
                     &::placeholder {
-                        color: white;
+                        color: black;
                     }
                 }
                 div {
@@ -58,10 +60,23 @@
 
             textarea {
                 margin-top: 40px;
+                padding: 10px;
                 height: 150px;
                 width: 100%;
                 border: none;
                 outline: none;
+            }
+
+            button {
+                cursor: pointer;
+                align-self: center;
+                margin-top: 20px;
+                border: none;
+                outline: none;
+                height: 35px;
+                width: 100px;
+                color: white;
+                background-color: black;
             }
         }
     }

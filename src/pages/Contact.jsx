@@ -1,3 +1,4 @@
+//React...
 import React, { useState } from 'react';
 
 //styles...
@@ -21,8 +22,6 @@ const Contact = () => {
 
     return (
         <div className='contact-page'>
-            <button onClick={() => console.log(form)}>CLICK ME</button>
-
             <section className='form-wrap'>
                 <div>
                     <h1>Lets connect</h1>
@@ -39,20 +38,14 @@ const Contact = () => {
                             maxLength={25}
                             required
                         />
-                            <input
-                                type="email"
-                                placeholder="Email"
-                                name="email"
-                                value={form.email}
-                                onChange={handleChange}
-                                required
-                            />  
-                            {/* {emailIsInvalid &&
-                                <span>
-                                Invalid
-                                <RiErrorWarningFill/>
-                                </span>
-                            } */}
+                        <input
+                            type="email"
+                            placeholder="Email"
+                            name="email"
+                            value={form.email}
+                            onChange={handleChange}
+                            required
+                        />  
                     </div>
                     <textarea
                         placeholder="Message"
