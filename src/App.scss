@@ -10,82 +10,113 @@ html {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
-  }
+}
   
-
 .App {
     height: 100vh;
     background-color: var(--royal-blue);
-
-    
-
-
     .nav-bar {
         position: absolute;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         min-height: 80px;
         width: 100%;
         padding: 15px;
         margin-bottom: 20px;
         align-items: center;
-        padding: 0px 160px;
         color: black;
         background-color: #fa96e4;
-        h3 {
-            font-size: 1.8rem;
-        }
-        .nav-wrap {
+
+        div {
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            height: 100%;
-            width: 300px;
-            > span {
-                position: relative;
+            align-items: center;
+            padding-top: 10px;
+            width: 80%;
+            h3 {
+                font-size: 1.8rem;
+            }
+            .nav-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 100%;
+                width: 300px;
+                > span {
+                    position: relative;
+                    a {
+                        font-size: 1.2rem;
+                        color: black;
+                        text-decoration: none; 
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        height: 3px;
+                        width: 0px;
+                        left: 0;
+                        bottom: -8px;
+                        background-color: white;
+                        transition: 0.2s;
+                    }
+    
+                    &:hover::after {
+                        width: 100%;
+                        background-color: white;
+                    }
+                  
+                }
+    
+            }
+            
+            
+            .social-media-links {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 100%;
+                width: 100px;
+                margin-left: 70px;
+                font-size: 1.3rem;
+                //background-color: aqua;
+                svg {
+                    cursor: pointer;
+                }
+    
                 a {
-                    font-size: 1.2rem;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
                     color: black;
-                    text-decoration: none; 
+                    transition: transform 0.3s ease;
+    
+                    &:hover {
+                        transform: translateY(-2px);
+                    }
+                    svg {
+                        font-size: 1.8rem;
+                     
+                    }
+                    span {
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 18px;
+                        width: 18px;
+                        border-radius: 50%;
+                        font-size: 0.70rem;
+                        color: white;
+                        transform: translate(10px, -10px);
+                        background-color: red;
+                       
+                    }
                 }
-                &::after {
-                    content: "";
-                    position: absolute;
-                    height: 3px;
-                    width: 0px;
-                    left: 0;
-                    bottom: -8px;
-                    background-color: white;
-                    transition: 0.2s;
-                }
-
-                &:hover::after {
-                    width: 100%;
-                    background-color: white;
-                }
-              
             }
 
-        }
-        
-        
-        .social-media-links {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 100%;
-            width: 100px;
-            margin-left: 70px;
-            font-size: 1.3rem;
-            //background-color: aqua;
-            svg {
-                cursor: pointer;
-            }
         }
     }
-
-
-
     footer {
         height: 250px;
         width: 100%;
@@ -129,4 +160,37 @@ html {
         }
 
     }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .App {
+        .nav-bar {
+            div {
+                width: 85%; 
+            } 
+        }
+    }
+}
+
+
+@media only screen and (max-width: 999px) {
+
+    .App {
+        .nav-bar {
+              
+            div {
+                
+                background-color: green;
+             
+    
+            }
+
+            .hamburger-menu {
+                background-color: aqua;
+            }
+        }
+
+    }
+    
 }
