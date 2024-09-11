@@ -1,7 +1,7 @@
 import React from 'react';
 
 //Styles...
-import "../styles/MoreDetails.scss"
+import "../styles/moreDetails.scss"
 
 const MoreDetails = () => {
     return (
