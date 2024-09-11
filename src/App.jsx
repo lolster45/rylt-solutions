@@ -67,9 +67,9 @@ function App() {
                 </div>
               </div>
 
-              <div className='hamburger-menu'>
+              {/* <div className='hamburger-menu'>
                     hamburger menu
-              </div>
+              </div> */}
 
 
             </div>
